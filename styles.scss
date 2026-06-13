@@ -29,6 +29,7 @@ $font-size: 1.125rem;
 :root{
   --blue-500: hsl(215, 51%, 70%);
   --cyan-400: hsl(178, 100%, 50%);
+  --cyan-hover:hsla(178, 100%, 50%, 0.427);
   --blue-950-main-BG: hsl(217, 54%, 11%);
   --blue-900-card-BG: hsl(216, 50%, 16%);
   --blue-800-line:hsl(215, 32%, 27%);
@@ -101,18 +102,27 @@ and height
   position: absolute;
   inset:0;
   width: inherit;
-  background-color: var(--cyan-400);
   height: inherit;
-  opacity:0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover > .view-container{
-  opacity:.80;
-  cursor: pointer;
+  background-color: none;
+  transition: background-color 0.3s ease;
 }
 
 .view-icon{
+  display: none;
+  height: 40px;
+}
+
+.image-container:hover > .view-container{
+  background-color: var(--cyan-hover);
+  cursor: pointer;
+
+  .view-icon{
+    display: block;
+  }
+}
+
+.view-icon{
+  display: none;
   height: 40px;
 }
 
@@ -136,6 +146,8 @@ and height
 }
 
 .nft-description{
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.5410547396528704rem + 2.670226969292391vw, 1.125rem);    
   font-weight: 300;
   margin-bottom: 8.5px;
 }
@@ -215,7 +227,6 @@ and height
   }
 
   .nft-description{
-    font-size: $font-size;
     margin-bottom: 9.99px;
   }
 
