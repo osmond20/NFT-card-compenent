@@ -75,6 +75,10 @@ body{
 .image-container{
   height: 275px;
   width: 275px;
+  /*
+  set the container to relative so that 
+  the overlay can be positioned inside of it
+  */
   position: relative;
 }
 
@@ -84,6 +88,11 @@ body{
   border-radius: 10px;
 }
 
+/*
+using absolute positioning and setting the inset to 0 so that
+the view container can be able to fill the image container's width
+and height
+*/
 .view-container{
   border-radius: 10px;
   display: flex;

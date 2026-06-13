@@ -1,5 +1,3 @@
-/*----FONTS----*/
-
 /* outfit-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -24,8 +22,6 @@
   font-weight: 600;
   src: url("fonts/outfit-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/*----COLORS----*/
 :root {
   --blue-500: hsl(215, 51%, 70%);
   --cyan-400: hsl(178, 100%, 50%);
@@ -35,7 +31,6 @@
   --white: hsl(0,0%, 100%);
 }
 
-/*---CSS RESET---*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -46,7 +41,6 @@ body {
   background-color: var(--blue-950-main-BG);
 }
 
-/*---MAIN---*/
 .parent-container {
   display: flex;
   justify-content: center;
@@ -56,7 +50,6 @@ body {
   color: var(--blue-500);
 }
 
-/*--CARD--*/
 .nft-card {
   height: 544.5px;
   background-color: var(--blue-900-card-BG);
@@ -69,10 +62,13 @@ body {
   padding: 25px;
 }
 
-/*---IMAGE---*/
 .image-container {
   height: 275px;
   width: 275px;
+  /*
+  set the container to relative so that 
+  the overlay can be positioned inside of it
+  */
   position: relative;
 }
 
@@ -82,6 +78,11 @@ body {
   border-radius: 10px;
 }
 
+/*
+using absolute positioning and setting the inset to 0 so that
+the view container can be able to fill the image container's width
+and height
+*/
 .view-container {
   border-radius: 10px;
   display: flex;
@@ -105,7 +106,6 @@ body {
   height: 40px;
 }
 
-/*---NFT TITLE AND DESCRIPTION---*/
 .description-container {
   display: grid;
   grid-template-rows: 2;
@@ -129,7 +129,6 @@ body {
   margin-bottom: 8.5px;
 }
 
-/*NFT PRICE AND DATE LEFT TO ACQUIRE*/
 .price-container-for-nft {
   display: flex;
   align-items: center;
@@ -157,7 +156,6 @@ body {
   gap: 5px;
 }
 
-/*AUTHOR OF NFT*/
 .creator-of-nft {
   display: flex;
   align-items: center;
@@ -186,7 +184,6 @@ body {
   border-radius: 100%;
 }
 
-/*RESPONSIVE DESIGN*/
 @media (min-width: 40rem) {
   .nft-card {
     height: 594.9px;
