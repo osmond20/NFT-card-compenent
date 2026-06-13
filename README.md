@@ -15,8 +15,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -90,4 +88,4 @@ Will be looking to get more better at CSS grid, flexbox and responsive design.
 
 ## Acknowledgments
 
-Big thanks to Elmar Chavez ([FrontEnd Mentor Profile](https://www.frontendmentor.io/profile/CodingWithJiro)) in one of my previous project, he provided useful feedback and pointed out improvements I could make to my code and I am grateful to have received it because I got to apply it in this project and got to learn more.
+Big thanks to Elmar Chavez ([Frontend Mentor Profile](https://www.frontendmentor.io/profile/CodingWithJiro)) in one of my previous project, he provided useful feedback and pointed out improvements I could make to my code and I am grateful to have received it because I got to apply it in this project and got to learn more.
