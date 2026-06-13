@@ -23,7 +23,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/nft-card-component-stOyxVcbCf)
 - Live Site URL: [NFT card component deployed solution](https://osmond20.github.io/NFT-card-compenent/)
 
 ## My process
