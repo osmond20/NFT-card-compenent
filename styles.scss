@@ -1,0 +1,222 @@
+/* outfit-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/outfit-v15-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/outfit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/outfit-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+// font size
+$font-size: 1.125rem;
+
+// colors
+:root{
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+  --blue-950-main-BG: hsl(217, 54%, 11%);
+  --blue-900-card-BG: hsl(216, 50%, 16%);
+  --blue-800-line:hsl(215, 32%, 27%);
+  --white: hsl(0,0%, 100%);
+}
+
+
+// CSS reset
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  background-color: var(--blue-950-main-BG);
+}
+
+// MAIN
+.parent-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Outfit';
+  color: var(--blue-500);
+}
+
+// CARD
+.nft-card{
+  height: 544.5px;
+  background-color: var(--blue-900-card-BG);
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+//IMAGE
+.image-container{
+  height: 275px;
+  width: 275px;
+  position: relative;
+}
+
+.nft-image{
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+}
+
+.view-container{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset:0;
+  width: inherit;
+  background-color: var(--cyan-400);
+  height: inherit;
+  opacity:0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover > .view-container{
+  opacity:.80;
+  cursor: pointer;
+}
+
+.view-icon{
+  height: 40px;
+}
+
+// NFT TITLE AND DESCRIPTION
+.description-container{
+  display: grid;
+  grid-template-rows: 2;
+}
+
+.nft-title{
+  margin-top: 25px;
+  margin-bottom: 17.5px;
+  font-size: 22px;
+  color:var(--white);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nft-title:hover{
+  color:var(--cyan-400);
+}
+
+.nft-description{
+  font-weight: 300;
+  margin-bottom: 8.5px;
+}
+
+// NFT PRICE AND DATE LEFT TO ACQUIRE
+.price-container-for-nft{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 270px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--blue-800-line);
+}
+
+.crypto-price{
+  display: flex;
+  gap: 5px;
+}
+
+.ethereum-icon{
+  width: 12.5px;
+}
+
+.ethereum-price-paragraph{
+  color:var(--cyan-400);
+}
+
+.time-left{
+  display: flex;
+  gap: 5px;
+}
+
+// AUTHOR OF NFT
+.creator-of-nft{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  width: 270px;
+  padding-top: 15px;
+}
+
+.author-paragraph{
+  font-weight: 300;
+}
+
+.creator{
+  color:var(--white);
+  transition: color 0.3s ease;
+}
+
+.creator:hover{
+  color: var(--cyan-400);
+  cursor: pointer;
+}
+
+.creator-image{
+  width: 35px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+
+// RESPONSIVE DESIGN
+@media(min-width:40rem){
+  .nft-card{
+    height: 594.9px;
+    width: 349.9px;
+  }
+
+  .image-container{
+    height: 299px;
+    width: 299px;
+  }
+
+  .nft-title{
+    margin-top: 26.4px;
+    margin-bottom: 19.1px;
+  }
+
+  .nft-description{
+    font-size: $font-size;
+    margin-bottom: 9.99px;
+  }
+
+  .price-container-for-nft{
+    height: 65px;
+    width: 299px;
+  }
+
+  .creator-of-nft{
+    width: 299px;
+    padding-top: 20px;
+  }
+}

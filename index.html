@@ -3,31 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+   <link rel="preload" href="fonts/outfit-v15-latin-300.woff2" as="font"
+   type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/outfit-v15-latin-regular.woff2" as="font"
+   type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/outfit-v15-latin-600.woff2" as="font"
+   type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="parent-container">
+    <div class="nft-card">
+      <div class="image-container">
+        <img class="nft-image" src="images/image-equilibrium.jpg" alt="NFT Image">
+        <div class="view-container">
+          <img class="view-icon" src="images/icon-view.svg" alt="">
+        </div>
+      </div>
+      
+      <section class="description-container">
+        <h3 class="nft-title">Equilibrium #3429</h3>
+        <p class="nft-description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </section>
 
-  Equilibrium #3429
+      <section class="price-container-for-nft">
+        <div class="crypto-price">
+          <img class="ethereum-icon" src="images/icon-ethereum.svg" alt="" width="20" height="20">
+          <p class="ethereum-price-paragraph">0.041ETH</p>
+        </div>
 
-  Our Equilibrium collection promotes balance and calm.
+        <div class="time-left">
+          <img class="clock-icon" src="images/icon-clock.svg" alt="" width="20" height="20">
+          <p class="nft-price-timer">3 days left</p>
+        </div>
+      </section>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+      <section class="creator-of-nft">
+        <img class="creator-image" src="images/image-avatar.png" alt="Image of creator">
+        <p class="author-paragraph">Creation of <span class="creator">Jules Wyvern</span></p>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
