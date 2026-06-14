@@ -93,7 +93,7 @@ and height
   inset: 0;
   width: inherit;
   height: inherit;
-  background-color: none;
+  background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
