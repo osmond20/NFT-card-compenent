@@ -1,3 +1,4 @@
+/*FONTS*/
 /* outfit-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -22,16 +23,24 @@
   font-weight: 600;
   src: url("fonts/outfit-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/*Colours*/
 :root {
+  /*primary*/
   --blue-500: hsl(215, 51%, 70%);
   --cyan-400: hsl(178, 100%, 50%);
+
+  /*color for hover state on image*/
   --cyan-hover:hsla(178, 100%, 50%, 0.427);
+
+  /*neutral*/
   --blue-950-main-BG: hsl(217, 54%, 11%);
   --blue-900-card-BG: hsl(216, 50%, 16%);
   --blue-800-line:hsl(215, 32%, 27%);
   --white: hsl(0,0%, 100%);
 }
 
+/*CSS RESET*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -42,6 +51,7 @@ body {
   background-color: var(--blue-950-main-BG);
 }
 
+/*MAIN*/
 .parent-container {
   display: flex;
   justify-content: center;
@@ -51,6 +61,7 @@ body {
   color: var(--blue-500);
 }
 
+/*CARD*/
 .nft-card {
   height: 34.03rem;
   background-color: var(--blue-900-card-BG);
@@ -190,6 +201,7 @@ and height
   border-radius: 100%;
 }
 
+/*RESPONSIVE DESIGN*/
 @media (min-width: 40rem) {
   .nft-card {
     height: 37.18rem;

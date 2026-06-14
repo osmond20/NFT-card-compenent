@@ -27,9 +27,14 @@ $font-size: 1.125rem;
 
 // colors
 :root{
+  // primary
   --blue-500: hsl(215, 51%, 70%);
-  --cyan-400: hsl(178, 100%, 50%);
+  --cyan-400: hsl(178, 100%, 50%); 
+  
+  // color for hover on image
   --cyan-hover:hsla(178, 100%, 50%, 0.427);
+
+  // neutral
   --blue-950-main-BG: hsl(217, 54%, 11%);
   --blue-900-card-BG: hsl(216, 50%, 16%);
   --blue-800-line:hsl(215, 32%, 27%);
